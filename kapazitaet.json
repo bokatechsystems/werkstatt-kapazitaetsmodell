@@ -1,0 +1,15 @@
+{
+  "_kommentar": "Wochenkapazität je Fachgebiet in Stunden. Demowerte.",
+  "_hinweis_allgemein": "ALLGEMEIN hat bewusst keine Kapazität: die Dokumentation macht kein eigener Mitarbeiter, sondern wer die Reparatur ausführt. Erscheint im Bericht ohne Kapazität.",
+
+  "kalenderwoche": 36,
+
+  "kapazitaet_h": {
+    "ELEKTRIK": 38.0,
+    "MECHANIK": 76.0,
+    "MOEBELBAU": 38.0,
+    "WASSER_GAS_HEIZUNG": 38.0
+  },
+
+  "warnschwelle_pct": 90
+}
