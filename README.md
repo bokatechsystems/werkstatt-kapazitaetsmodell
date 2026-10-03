@@ -76,8 +76,8 @@ Dieselbe Reparatur, einmal an der Vertragsmarke, einmal am Fremdfabrikat:
 | Streuung | ±49 min | ±63 min | **+29 %** |
 
 **Die Streuung wächst schneller als die Zeit.** Das steht nirgends im Code --
-es entsteht, weil der grösste Modellfaktor (1,30) auf den Vorgang mit der
-grössten Streuung fällt, die Fehlersuche. Bei unbekannter Verkabelung wird
+es entsteht, weil der größte Modellfaktor (1,30) auf den Vorgang mit der
+größten Streuung fällt, die Fehlersuche. Bei unbekannter Verkabelung wird
 nicht nur alles langsamer, es wird auch *unsicherer*.
 
 ### Der Bericht
@@ -108,8 +108,8 @@ Reparatur ausführt. Eine Kapazität dafür wäre eine erfundene Ressource.
 - **Es entscheidet nicht.** Der Werkstattleiter entscheidet -- nur erstmals
   mit Daten.
 
-Ausserdem: **keine Kundendaten im System.** Die Fahrzeugnummer genügt zur
-Identifikation. Damit entfällt der gesamte DSGVO-Aufwand.
+Außerdem: **keine Kundendaten im System.** Die Fahrzeugnummer genügt zur
+Identifikation. Damit sinkt der DSGVO-Aufwand deutlich. Die Fähigkeitsfaktoren je Monteur sind allerdings Mitarbeiterdaten und müssen entsprechend behandelt werden.
 
 ### Aufbau
 
