@@ -2,7 +2,7 @@
 """
 Werkstatt-Kapazitätsmodell -- KW-Bericht.
 
-Aufruf:  python riport.py
+Aufruf:  python report.py
 
 Das ist die Ausgabe, für die das ganze Modell existiert. Alle OFFENEN
 Karten werden je Fachgebiet summiert und der Wochenkapazität
