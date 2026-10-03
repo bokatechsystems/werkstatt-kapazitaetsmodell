@@ -102,7 +102,7 @@ Reparatur ausführt. Eine Kapazität dafür wäre eine erfundene Ressource.
 
 - **Es plant nicht ein.** Kapazitätsbeschränkte Ressourcenplanung mit
   eingeschränkten Qualifikationen ist NP-schwer. Auch ERP-Systeme lösen das
-  nicht -- sie machen es sichtbar.
+  nicht, in der Regel nicht vollständig -- sie machen es sichtbar.
 - **Es bewertet keine Personen.** Die Ausgabe beschreibt die Verteilung der
   Arbeit, nicht die Leistung eines Monteurs.
 - **Es entscheidet nicht.** Der Werkstattleiter entscheidet -- nur erstmals
@@ -110,6 +110,8 @@ Reparatur ausführt. Eine Kapazität dafür wäre eine erfundene Ressource.
 
 Außerdem: **keine Kundendaten im System.** Die Fahrzeugnummer genügt zur
 Identifikation. Damit sinkt der DSGVO-Aufwand deutlich. Die Fähigkeitsfaktoren je Monteur sind allerdings Mitarbeiterdaten und müssen entsprechend behandelt werden.
+
+Annahme: Die Vorgänge streuen unabhängig voneinander. Am selben Fahrzeug (Alter, Korrosion) sind sie in der Praxis teilweise korreliert, dann liegt die echte Streuung zwischen beiden Werten.
 
 ### Aufbau
 
@@ -119,14 +121,14 @@ Identifikation. Damit sinkt der DSGVO-Aufwand deutlich. Die Fähigkeitsfaktoren 
 | `seed_demo.sql` | Demodaten: Kühlschrank + Bremsanlage |
 | `init_db.py` | legt `werkstatt.db` an |
 | `schaetzung.py` | Schätzung für eine Karte |
-| `riport.py` | KW-Bericht über alle offenen Karten |
+| `report.py` | KW-Bericht über alle offenen Karten |
 | `kapazitaet.json` | Wochenkapazität je Fachgebiet |
 
 ```bash
 python init_db.py
 python schaetzung.py 4412    # Kühlschrank
 python schaetzung.py 4413    # Bremse, Tandemachse
-python riport.py
+python report.py
 ```
 
 Kein Setup, keine Abhängigkeiten -- SQLite ist Teil von Python.
